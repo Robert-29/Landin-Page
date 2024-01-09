@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body {
+    background: #0E0E0E;
+}
+
+
+.fondo-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-superpuesto {
+    position: absolute;
+    top: 0%;
+    color: white;
+    text-align: center;
+}
+
+/*----------GALERÍA---------*/
+
+.contenedor-galeria {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.seccion1,
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titulo-galeria {
+    margin-top: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.eslogan {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 100px;
+    
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.seccion1 img {
+    border-radius: 5px;
+    height: 200px;
+    width: 340px;
+}
+
+.seccion2 img {
+    border-radius: 5px;
+    height: 200px;
+    width: 340px;
+}
+
+.interior span{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.interior h1{
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.interior img{
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+}
