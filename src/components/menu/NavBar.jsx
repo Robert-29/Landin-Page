@@ -14,7 +14,7 @@ const NavBar = () => {
                     </li>
                 </ul>
                 <div>
-                    <button>Comprar</button>
+                    <button className="boton-comprar" >Comprar</button>
                 </div>
             </nav>
         </header>

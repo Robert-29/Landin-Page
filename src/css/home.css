@@ -30,7 +30,7 @@ body {
     margin-bottom: 200px;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -60,13 +60,17 @@ body {
     color: white;
     font-size: 30px;
     margin-bottom: 100px;
-    
+
 }
 
 .cards img {
     max-width: 100%;
     height: auto;
-  }
+}
+
+.movimiento:hover {
+    margin-top: -50px;
+}
 
 .seccion1 img {
     border-radius: 5px;
@@ -80,19 +84,203 @@ body {
     width: 340px;
 }
 
-.interior span{
+.interior span {
     font-size: 20px;
     text-align: center;
     color: white;
 }
 
-.interior h1{
+.interior h1 {
     margin-bottom: 30px;
     font-family: 'Dancing Script', cursive;
 }
 
-.interior img{
+.interior img {
     margin-top: 50px;
     width: 100%;
     height: 700px;
+    margin-bottom: 100px;
+}
+
+.caracteristicas {
+    text-align: center;
+    color: white;
+}
+
+.caracteristicas nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.caracteristicas ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+}
+
+.caracteristicas li {
+    border-right: 1px solid black;
+    color: black;
+    height: 100%;
+    width: 20%;
+    font-size: 20px;
+}
+
+.carac-titulo {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.caracteristicas div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.caracteristicas article {
+    width: 33%;
+}
+
+.caracteristicas article img {
+    width: 90%;
+}
+
+.caracteristicas article p {
+    padding: 10px;
+}
+
+.estilos {
+    margin-top: 80px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.grande {
+    height: 100%;
+    width: 40%;
+}
+
+.grande img {
+    height: 100%;
+    width: 100%;
+}
+
+.pequenos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+
+.pequenos img {
+    height: 33%;
+    width: 100%;
+}
+
+.modelos{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.titulo-modelo{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.fila{
+    height: 45%;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+}
+
+.fila article{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.chicas{
+    height: 60%;
+    width: 70%;
+}
+
+.grandes{
+    height: 60%;
+    width: 85%;
+}
+
+.cuadrante1{
+    border-bottom:1px solid white;
+    border-right: 1px solid white;
+}
+
+.cuadrante2{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.cuadrante3{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.cuadrante4{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(235, 222, 222);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    width: 90%;
+    height: 80%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.seguir{
+    margin: 50px 0px 50px 50px;
+    font-size: 25px;
+}
+
+.icono{
+    font-size: 100px;
+    color: red;
+}
+
+.final{
+    margin-left: 50px;
 }

@@ -1,0 +1,126 @@
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  top: 0;
+  left: 0;
+  background-color: #0E0E0E;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+ 
+.sidebar a:hover {
+  background-color: white;
+  color: #0E0E0E;
+  margin-left: 10px;
+}
+
+.color-menu:hover{
+  background-color: white;
+  color: #0E0E0E;
+}
+
+.submenu {
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
+  border-left: solid 1px white;
+  margin-top: 20px;
+}
+
+.submenu li {
+  padding: 8px;
+  text-align: start;
+  margin-right: 0px;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+  transition: 0.3s;
+}
+
+.contenedor2{
+  display: flex;
+}
+
+.ordenar{
+  margin: 0 auto;
+}
+
+.ordenar h1{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.formulario {
+  margin-top: 50px;
+  max-width: 600px;
+  height: 40vh;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fila {
+  flex-basis: calc(50% - 10px);
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #45a049;
+}

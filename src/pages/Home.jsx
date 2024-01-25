@@ -1,6 +1,10 @@
-import NavBar from '../components/NavBar';
 import '../css/home.css';
+import NavBar from '../components/menu/NavBar.jsx';
 import { Galeria } from '../components/galeria.jsx';
+import { Caracteristicas } from '../components/Caracteristicas.jsx';
+import { Estilos } from '../components/estilos.jsx';
+import { Modelos } from '../components/Modelos.jsx';
+import { Footer } from '../components/Footer.jsx';
 
 const Home = () => {
     return (
@@ -12,6 +16,10 @@ const Home = () => {
                 </div>
             </section>
             <Galeria/>
+            <Caracteristicas/>
+            <Estilos/>
+            <Modelos/>
+            <Footer/>
         </div>
     );
 }
