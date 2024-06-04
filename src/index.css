@@ -106,45 +106,60 @@ input::placeholder{
 }
 
 header{
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    padding: 1rem;
+    background-color: white;
 }
 
-.navbar {
+.navbar{
+    height: 70px;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 1350px;
-    position: absolute;
-}
-
-.logo {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.logo img {
-    margin-top: 5px;
-    margin-right: 1rem;
-    width: 60px;
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.boton-comprar{
-    height: 30px;
-    width: 100px;
-    font-size: 15px;
-    background: none;
-    border: 1px solid black;
-    cursor: pointer;
+.logo img{
+    height: 80px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    margin-left: 30px;
 }
 
 .nav-links a {
     margin-right: 1rem;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-links a:hover{
+    border-bottom: solid 3px orange;
+}
+
+.boton-comprar{
+    width: 200px;
+    height: 40px;
+    background: none;
+    border: solid 1.5px black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.boton-comprar:hover{
+    background-color: black;
     color: white;
+    transition: .5s;
 }

@@ -1,11 +1,12 @@
 import '../../css/Administrador.css'
+import { Link } from 'react-router-dom';
+
 
 const SubMenu = () => {
   return (
     <ul className="submenu">
-      <li><a className='color-menu'  href="#">Opción 1</a></li>
-      <li><a className='color-menu'  href="#">Opción 2</a></li>
-      <li><a className='color-menu'  href="#">Opción 3</a></li>
+      <li><Link to="/VerAdministrador">Administradores</Link></li>
+      <li><Link to="/VerCliente">Clientes</Link></li>
     </ul>
   );
 }

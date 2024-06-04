@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SubMenu from './SubMenu';
 import '../../css/Administrador.css';
 
@@ -8,18 +9,18 @@ export function Lateral() {
   const toggleSubMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
- 
+
   return (
-    <div className="sidebar">
+    <div className="sidebar"> 
       <h2>Administrador</h2>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
+        <li><Link to="/Administrador">Inicio</Link></li>
+        <li><Link to="/RegistrarAdministrador">Registrar</Link></li>
         <li>
-          <a href="#" onClick={toggleSubMenu}>Servicios</a>
+          <a href="#" onClick={toggleSubMenu}>Usuarios</a>
           {showSubMenu && <SubMenu />}
         </li>
-        <li><a href="#">Contacto</a></li>
+        <li><Link to="/ventas">Ventas</Link></li>
       </ul>
     </div>
   );

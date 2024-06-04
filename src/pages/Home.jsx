@@ -1,26 +1,40 @@
 import '../css/home.css';
 import NavBar from '../components/menu/NavBar.jsx';
+import { TodosVehiculos } from '../components/TodosVehiculos.jsx';
 import { Galeria } from '../components/galeria.jsx';
 import { Caracteristicas } from '../components/Caracteristicas.jsx';
 import { Estilos } from '../components/estilos.jsx';
-import { Modelos } from '../components/Modelos.jsx';
 import { Footer } from '../components/Footer.jsx';
+import { Datos } from '../components/Datos.jsx';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Home = () => {
+
     return (
-        <div className="home-container">
-            <section className="fondo-imagen-container">
-                <img className="fondo-imagen" src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicles/2024/crossover-suvs/escalade/01-images/my24-escalade-mov-design-intro-l-v3.jpg?imwidth=960" alt="" />
-                <div className="contenido-superpuesto">
-                    <NavBar />
+        <section className="home-container">
+            <NavBar />
+            <Carousel 
+                className="carrousel" 
+                showThumbs={false} 
+                autoPlay 
+                interval={5000} 
+                infiniteLoop
+            >
+                <div>
+                    <img src="../../public/img/home-1 (1).avif" alt="Home 1" />
                 </div>
-            </section>
-            <Galeria/>
-            <Caracteristicas/>
-            <Estilos/>
-            <Modelos/>
-            <Footer/>
-        </div>
+                <div>
+                    <img src="../../public/img/home-2.avif" alt="Home 2" />
+                </div>
+            </Carousel>
+            <TodosVehiculos />
+            <Galeria />
+            <Caracteristicas />
+            <Estilos />
+            <Datos />
+            <Footer />
+        </section>
     );
 }
 

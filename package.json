@@ -10,15 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "body-parser": "^1.20.2",
+    "apollo-server": "^3.13.0",
+    "axios": "^1.6.7",
+    "body-parser": "^1.19.0",
     "boxicons": "^2.1.4",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "graphql": "^16.8.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.18.0",
-    "react-youtube": "^10.1.0"
+    "require": "^2.4.20"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -29,5 +34,18 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "vite": "^4.4.5"
-  }
+  },
+  "description": "React + Vite",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robert-29/Landin-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robert-29/Landin-Page/issues"
+  },
+  "homepage": "https://github.com/Robert-29/Landin-Page#readme"
 }

@@ -5,7 +5,6 @@ export function Galeria() {
         <div>
             <section className='contenedor-galeria' >
                 <h1 className='eslogan' >Tu viaje perfecto comienza aquí <br /> Cadillac - Impulsando tus Sueños, Conduciendo tu Éxito.</h1>
-                <h1 className='titulo-galeria' >GALERÍA</h1>
                 <div className="cards">
                     <article className='seccion1' >
                         <img src="../../public/img/img1.jpg" alt="Imagen2" />

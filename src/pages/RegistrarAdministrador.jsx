@@ -11,9 +11,26 @@ export function RegistrarAdministrador() {
     const [correo, setCorreo] = useState('');
     const [contrasena, setContrasena] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log( { nombre, apellido, fechaNacimiento, telefono, correo, contrasena });
+    const handleSubmit = async () => {
+
+        try {
+            const response = await fetch('http://localhost:3001/api/insertar-usuario', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ nombre, apellido, fecha_nacimiento: fechaNacimiento, telefono, correo, contrasena }),
+            });
+
+            if (response.ok) {
+                console.log('Usuario insertado correctamente');
+                // Puedes realizar acciones adicionales después de la inserción
+            } else {
+                console.error('Error al insertar el usuario');
+            }
+        } catch (error) {
+            console.error('Error al enviar el formulario:', error);
+        }
     };
 
     return (
@@ -36,7 +53,7 @@ export function RegistrarAdministrador() {
                             </label>
                         </div>
                     </div>
-                    <div className="columnas">
+                    <div className="columnas"> 
                         <div className="fila">
                             <label>
                                 Fecha de Nacimiento:
